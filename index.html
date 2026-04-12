@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G.M. Mounika | Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-blob"></div>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">GM.</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#github-repos">Open Source</a></li>
+    <li><a href="#internship">Experience</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="resume.pdf" download>Resume</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV -->
+<nav class="nav-mobile" id="mobileNav">
+  <button class="close-btn" id="closeNav">✕</button>
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="#skills" onclick="closeMobileNav()">Skills</a>
+  <a href="#projects" onclick="closeMobileNav()">Projects</a>
+  <a href="#github-repos" onclick="closeMobileNav()">Open Source</a>
+  <a href="#internship" onclick="closeMobileNav()">Experience</a>
+  <a href="#certifications" onclick="closeMobileNav()">Certifications</a>
+  <a href="resume.pdf" download onclick="closeMobileNav()">Resume</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Available for opportunities</div>
+    <h1 class="hero-name">
+      <span class="line1">G.M. Mounika</span>
+      <span class="line2">Full Stack Dev</span>
+    </h1>
+    <p class="hero-tagline">
+      Computer Science engineer passionate about building elegant web experiences — from pixel-perfect interfaces to robust backends.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+        View Projects
+      </a>
+      <a href="#contact" class="btn-secondary">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v12H4z"/><path d="M4 4l8 8 8-8"/></svg>
+        Get in Touch
+      </a>
+      <a href="resume.pdf" download class="btn-secondary" style="border-color: rgba(0, 217, 192, 0.4); color: var(--accent3);">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Resume
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num" data-target="8.28" data-decimals="2" data-suffix="">0.00</div>
+        <div class="stat-label">CGPA</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="2" data-decimals="0" data-suffix="+">0</div>
+        <div class="stat-label">Projects</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="5" data-decimals="0" data-suffix="+">0</div>
+        <div class="stat-label">Certifications</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="6" data-decimals="0" data-suffix="mo+">0</div>
+        <div class="stat-label">Internship</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">Scroll</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">Who I am</div>
+  <h2 class="section-title">About Me</h2>
+  <p class="section-sub">A curious developer who loves turning ideas into reality through clean code.</p>
+  <div class="about-grid reveal">
+    <div class="about-avatar-wrap">
+      <div class="about-avatar-bg"></div>
+      <div class="about-avatar-card">
+        <div class="avatar-icon">GM</div>
+        <div class="avatar-name">G.M. Mounika</div>
+        <div class="avatar-role">Full Stack Developer · CSE Student</div>
+        <div class="avatar-chips">
+          <span class="chip">React</span>
+          <span class="chip">Python</span>
+          <span class="chip">Java</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">OpenCV</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-text">
+      <p>I'm a B.Tech Computer Science student at Madanapalle Institute of Technology & Science with a strong CGPA of 8.28, driven by a deep interest in full-stack web development and computer vision.</p>
+      <p>Currently interning at iStudio as a FullStack Development Intern (Remote), I work on building and maintaining production web applications — from crafting responsive UIs to integrating APIs and managing databases.</p>
+      <p>I believe in writing clean, maintainable code and continuously pushing my skills across the entire stack. Outside of coding, I enjoy art — I've won 1st prizes in drawing and painting competitions.</p>
+      <div class="about-contact">
+        <div class="contact-row">
+          <div class="icon">📱</div>
+          <a href="tel:+916301732426">+91-6301732426</a>
+        </div>
+        <div class="contact-row">
+          <div class="icon">✉️</div>
+          <a href="mailto:mounikay845@gmail.com">mounikay845@gmail.com</a>
+        </div>
+        <div class="contact-row">
+          <div class="icon">💼</div>
+          <a href="https://www.linkedin.com/in/mounika-yadav-2b380b384/" target="_blank">linkedin</a>
+        </div>
+        <div class="contact-row">
+          <div class="icon">💼</div>
+          <a href="https://leetcode.com/u/G_M_Mounika/" target="_blank">Leetcode Profile</a>
+        </div>
+        <div class="contact-row">
+          <div class="icon">💼</div>
+          <a href="https://www.hackerrank.com/profile/mounikay845" target="_blank">Hackerrank Profile</a>
+        </div>
+        <div class="contact-row">
+          <div class="icon">🐱</div>
+          <a href="https://github.com/mounikay845-source" target="_blank">GitHub Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label">What I work with</div>
+  <h2 class="section-title">Technical Skills</h2>
+  <p class="section-sub">A curated toolkit built through projects, internships, and continuous learning.</p>
+  <div class="skills-container reveal">
+    <div class="skills-grid">
+      <div class="skill-category">
+        <div class="cat-header">
+          <div class="cat-icon">⚡</div>
+          <div class="cat-title">Programming</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Python</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="cat-header">
+          <div class="cat-icon">🌐</div>
+          <div class="cat-title">Web Development</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Responsive Design</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="cat-header">
+          <div class="cat-icon">🗄️</div>
+          <div class="cat-title">Databases</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">MySQL</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="cat-header">
+          <div class="cat-icon">🛠️</div>
+          <div class="cat-title">Developer Tools</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">Jupyter Notebook</span>
+          <span class="skill-tag">Visual Studio</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="cat-header">
+          <div class="cat-icon">🧠</div>
+          <div class="cat-title">AI / Computer Vision</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">OpenCV</span>
+          <span class="skill-tag">CNN</span>
+          <span class="skill-tag">Deep Learning</span>
+          <span class="skill-tag">Python 3.5</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="cat-header">
+          <div class="cat-icon">📋</div>
+          <div class="cat-title">Other</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Software Engineering</span>
+          <span class="skill-tag">Operating Systems</span>
+          <span class="skill-tag">MS Office Suite</span>
+          <span class="skill-tag">API Integration</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label">What I've built</div>
+  <h2 class="section-title">Projects</h2>
+  <p class="section-sub">Hands-on builds that showcase my technical range.</p>
+  <div class="projects-grid">
+
+    <div class="project-card reveal">
+      <div class="project-top ecom">
+        <div class="project-glow"></div>
+        <div class="project-preview">
+          <div class="preview-bar">
+            <div class="preview-dot" style="background:#ff5f57"></div>
+            <div class="preview-dot" style="background:#ffbd2e"></div>
+            <div class="preview-dot" style="background:#28ca41"></div>
+          </div>
+          <div class="preview-line" style="width:60%"></div>
+          <div style="display:flex;gap:8px;margin-top:10px">
+            <div style="flex:1;height:50px;background:rgba(124,92,252,0.15);border-radius:6px;border:1px solid rgba(124,92,252,0.2)"></div>
+            <div style="flex:1;height:50px;background:rgba(124,92,252,0.15);border-radius:6px;border:1px solid rgba(124,92,252,0.2)"></div>
+            <div style="flex:1;height:50px;background:rgba(124,92,252,0.15);border-radius:6px;border:1px solid rgba(124,92,252,0.2)"></div>
+          </div>
+          <div class="preview-line" style="width:80%;margin-top:10px"></div>
+          <div class="preview-line" style="width:40%"></div>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-tech">
+          <span class="tech-badge">HTML</span>
+          <span class="tech-badge">CSS</span>
+          <span class="tech-badge">JavaScript</span>
+        </div>
+        <div class="project-title">E-Commerce Website</div>
+        <div class="project-desc">A fully functional e-commerce platform built with responsive design principles and polished user experience.</div>
+        <div class="project-features">
+          <div class="feature">Product listing, cart & checkout system</div>
+          <div class="feature">Responsive, mobile-first UI layouts</div>
+          <div class="feature">Form validation & backend integration</div>
+          <div class="feature">Optimized UX across all devices</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-top cv">
+        <div class="project-glow"></div>
+        <div class="project-preview">
+          <div class="preview-bar">
+            <div class="preview-dot" style="background:#ff5f57"></div>
+            <div class="preview-dot" style="background:#ffbd2e"></div>
+            <div class="preview-dot" style="background:#28ca41"></div>
+          </div>
+          <div style="margin-top:10px;display:flex;align-items:center;gap:10px">
+            <div style="width:50px;height:50px;border-radius:50%;background:rgba(0,217,192,0.2);border:2px solid rgba(0,217,192,0.4);display:flex;align-items:center;justify-content:center;font-size:1.2rem">👤</div>
+            <div>
+              <div class="preview-line" style="width:80px;background:rgba(0,217,192,0.2)"></div>
+              <div class="preview-line" style="width:60px;margin-top:5px;background:rgba(0,217,192,0.15)"></div>
+              <div style="font-size:0.65rem;color:rgba(0,217,192,0.7);margin-top:4px">Age: 22 · Male</div>
+            </div>
+          </div>
+          <div class="preview-line" style="width:90%;margin-top:15px;background:rgba(0,217,192,0.1)"></div>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-tech">
+          <span class="tech-badge green">Python</span>
+          <span class="tech-badge green">OpenCV</span>
+          <span class="tech-badge green">CNN</span>
+          <span class="tech-badge green">Deep Learning</span>
+        </div>
+        <div class="project-title">Age & Gender Detection</div>
+        <div class="project-desc">A computer vision application using Convolutional Neural Networks to predict a person's age group and gender from facial features.</div>
+        <div class="project-features">
+          <div class="feature">CNN-based age group classification</div>
+          <div class="feature">Real-time gender detection via OpenCV</div>
+          <div class="feature">Led as Team Leader in Diploma project</div>
+          <div class="feature">91.58% project score</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- GITHUB REPOS -->
+<section id="github-repos">
+  <div class="section-label">Open Source</div>
+  <h2 class="section-title">GitHub Repositories</h2>
+  <p class="section-sub">Latest projects and code snippets from my GitHub profile.</p>
+  <div class="projects-grid" id="github-grid">
+    <!-- Repos will be injected here -->
+  </div>
+</section>
+
+<!-- INTERNSHIP -->
+<section id="internship">
+  <div class="section-label">Experience</div>
+  <h2 class="section-title">Internship</h2>
+  <p class="section-sub">Real-world experience building production-grade applications.</p>
+  <div class="internship-card reveal">
+    <div class="intern-header">
+      <div>
+        <div class="intern-company">iStudio</div>
+        <div class="intern-role">FullStack Development Intern · Remote</div>
+        <div style="color:var(--muted);font-size:0.85rem;margin-top:0.5rem">Oct 2025 – Present</div>
+      </div>
+      <div class="intern-badge">Active</div>
+    </div>
+    <div class="intern-grid">
+      <div class="intern-item">
+        <strong>Frontend</strong>
+        Developed and maintained responsive UIs using HTML, CSS & JavaScript for real-world web applications.
+      </div>
+      <div class="intern-item">
+        <strong>Backend</strong>
+        Implemented backend functionality and integrated RESTful APIs for dynamic, data-driven features.
+      </div>
+      <div class="intern-item">
+        <strong>Databases</strong>
+        Worked with relational databases to store, retrieve and manage application data efficiently.
+      </div>
+      <div class="intern-item">
+        <strong>Collaboration</strong>
+        Collaborated with the dev team using Git/GitHub for version control and code reviews.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-label">Credentials</div>
+  <h2 class="section-title">Certifications</h2>
+  <p class="section-sub">Validated skills from recognized platforms and programs.</p>
+  <div class="certs-grid">
+    <div class="cert-card reveal">
+      <div class="cert-icon">🏅</div>
+      <div class="cert-name">Web Development & Designing</div>
+      <div class="cert-issuer">Skill India</div>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-icon">☕</div>
+      <div class="cert-name">Java (Basics)</div>
+      <div class="cert-issuer">
+        <a href="https://www.hackerrank.com/certificates/ca136620f8c7">HackerRank</a></div>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-icon">🎨</div>
+      <div class="cert-name">CSS (Basics)</div>
+      <div class="cert-issuer">
+        <a href="https://www.hackerrank.com/certificates/815f904d957e">HackerRank</a>
+      </div>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-icon">🖥️</div>
+      <div class="cert-name">Web UI Development</div>
+      <div class="cert-issuer">
+        <a href="C:\Users\M.G.MOUNIKA\Documents\myprotofolio\mp\istudo_web.pdf">iStudio</a></div>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-icon">🐍</div>
+      <div class="cert-name">Joy of Computing using Python</div>
+      <div class="cert-issuer">NPTEL</div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="section-label">Beyond Code</div>
+  <h2 class="section-title">Achievements</h2>
+  <p class="section-sub">Highlights from academics, sports, and the arts.</p>
+  <div class="achieve-grid">
+    <div class="achieve-card reveal">
+      <div class="achieve-emoji">🥇</div>
+      <div>
+        <div class="achieve-title">Academic Excellence</div>
+        <div class="achieve-desc">Secured 1st rank in various subjects and events throughout schooling, earning multiple awards.</div>
+      </div>
+    </div>
+    <div class="achieve-card reveal">
+      <div class="achieve-emoji">🎨</div>
+      <div>
+        <div class="achieve-title">Painting & Drawing</div>
+        <div class="achieve-desc">Won 1st prizes in painting and drawing competitions, combining creative flair with technical skill.</div>
+      </div>
+    </div>
+    <div class="achieve-card reveal">
+      <div class="achieve-emoji">🏐</div>
+      <div>
+        <div class="achieve-title">Sports Leadership</div>
+        <div class="achieve-desc">Organized and led kabaddi events, demonstrating teamwork and leadership beyond the screen.</div>
+      </div>
+    </div>
+    <div class="achieve-card reveal">
+      <div class="achieve-emoji">👩‍💻</div>
+      <div>
+        <div class="achieve-title">Team Leader — CNN Project</div>
+        <div class="achieve-desc">Led the Age & Gender Detection project as team leader in Diploma, achieving 91.58% marks.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="section-label">Let's Talk</div>
+    <h2 class="section-title reveal">Open to Opportunities</h2>
+    <p class="contact-cta reveal">Looking for entry-level roles where I can apply my skills, learn from experienced professionals, and contribute meaningfully.</p>
+    <a href="mailto:mounikay845@gmail.com" class="contact-email-big reveal">mounikay845@gmail.com</a>
+    <div class="contact-links reveal">
+      <a href="tel:+916301732426" class="contact-link">📱 Call Me</a>
+      <a href="mailto:mounikay845@gmail.com" class="contact-link">✉️ Email Me</a>
+      <a href="https://www.linkedin.com/in/mounika-yadav-2b380b384/" target="_blank" class="contact-link">💼 LinkedIn</a>
+      <a href="https://leetcode.com/u/G_M_Mounika/" target="_blank" class="contact-link">💼 Leetcode</a>
+      <a href="https://www.hackerrank.com/profile/mounikay845" target="_blank" class="contact-link">💼 Hackerrank</a>
+      <a href="https://github.com/mounikay845-source" target="_blank" class="contact-link">🐱 GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Designed & Built by <span>G.M. Mounika</span> · 2026</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
+
